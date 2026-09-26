@@ -6,6 +6,6 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Route::get('/login', function () {
+Route::get('auth/login', function () {
     return view('login');
 })->name('login');
